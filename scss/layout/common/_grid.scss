@@ -16,11 +16,13 @@ $base: math.div(100%, $columns);
   .row {
     display: flex;
     flex-wrap: wrap;
+    @include mixins.tablet-portrait() { display: block; }
   }
 }
 @for $i from 1 through $columns {
   .col-#{$i} {
     width: 100%;
+    margin-bottom: 20px;
     @media #{general.$desktop} {
       width: $base * $i;
     }
