@@ -8,10 +8,10 @@
   gap: 20px;
   box-shadow: rgba(0,0,0,0.05) 0 5px;
   border-radius: 5px;
-  @include mixins.mobile() { flex-direction: column; }
+  @include mixins.tablet-portrait() { flex-direction: column; }
   .banner__content {
     max-width: 50%;
-    @include mixins.mobile() { max-width: 100%; text-align: center; }
+    @include mixins.tablet-portrait() { max-width: 100%; text-align: center; }
     .banner__content--title { font-size: 3.5em; font-weight: 800;}
     .banner__content--text { font-size: 2.75em; font-weight: 300; }
   }
@@ -21,6 +21,6 @@
     flex-direction: column;
     align-items: flex-end;
     max-width: 300px;
-    @include mixins.mobile() { max-width: 100%; width: 100%;}
+    @include mixins.tablet-portrait() { max-width: 100%; width: 100%;}
   }
 }

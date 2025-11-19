@@ -1,6 +1,7 @@
 $desktop: "only screen and (min-width: 1201px) and (max-width: 1600px)";
 $tablet: "only screen and (min-width: 981px) and (max-width: 1200px)";
-$mobile: "only screen and (max-width: 980px)";
+$tablet-portrait: "only screen and (min-width: 1px) and (max-width: 980px)";
+$mobile: "only screen and (max-width: 650px)";
 
 $primary-color: #444444;
 $secondary-color: #1691C3;

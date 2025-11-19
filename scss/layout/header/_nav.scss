@@ -2,7 +2,7 @@
 @use "../../mixins/mixins";
 // TODO add mobile!!!
 .header__nav {
-  @include mixins.mobile() {
+  @include mixins.tablet-portrait() {
     display: none;
   }
 }

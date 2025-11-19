@@ -6,6 +6,12 @@
   }
 }
 
+@mixin tablet-portrait() {
+  @media #{general.$tablet-portrait} {
+    @content;
+  }
+}
+
 @mixin tablet() {
   @media #{general.$tablet} {
     @content;
