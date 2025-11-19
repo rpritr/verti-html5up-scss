@@ -7,14 +7,16 @@
   justify-content: space-between;
   align-items: center;
   height: 170px;
-  @include mixins.tablet-portrait() { justify-content: center; }
+  @include mixins.mobile() { height: 100px; }
+  @include mixins.tablet-portrait() { height: 130px; justify-content: center; }
   .header__brand
   {
     display: flex;
     align-items: center;
     gap: 20px;
+    font-size: 1.2em;
     font-weight: 700;
-    @include mixins.tablet-portrait() { flex-direction: column; }
+    @include mixins.tablet-portrait() { gap: 10px; flex-direction: column; }
     &:after { content: "by HTML5 UP"; }
   }
 }

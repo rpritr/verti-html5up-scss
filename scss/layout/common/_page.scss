@@ -1,4 +1,5 @@
 @use "../../variables/general";
+@use "../../mixins/mixins";
 @use "../header/header";
 @use "../banner/banner";
 @use "../common/buttons";
@@ -6,4 +7,7 @@ body {
   font-family: general.$primary-font ;
   background-color: general.$background-color;
   font-size: 11pt;
+  @include mixins.mobile() { font-size: 5pt; }
+  @include mixins.tablet-portrait() { font-size: 7pt; }
+  @include mixins.tablet() { font-size: 9pt; }
 }
