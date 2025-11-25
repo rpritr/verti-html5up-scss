@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="scss/main.scss">
 </head>
 <body>
-    <div class="container">
         <!-- header -->
-        <header class="header">
+        <header class="header container">
             <div class="header__brand"> <!-- brand -->
                 <p class="header__logo">Verti</p>
             </div> <!-- e: brand -->
@@ -29,7 +28,7 @@
         </header>
         <!--e: header -->
         <!-- banner -->
-        <div class="banner">
+        <div class="banner container">
             <div class="banner__content">
                 <h1 class="banner__content--title">Hi. This is Verti.</h1>
                 <p class="banner__content--text">It's a free responsive site template by HTML5 UP</p>
@@ -41,7 +40,7 @@
         </div>
         <!-- e: banner -->
         <!-- blog -->
-        <div class="blog section">
+        <div class="blog section container">
             <div class="row"> <!-- row -->
                 <div class="col-4">
                     <img src="assets/pic01.jpg" alt="blog image">
@@ -70,7 +69,48 @@
             </div> <!-- e: row -->
         </div>
         <!-- e: blog -->
-        <footer class="footer">
+        <!-- main -->
+        <main class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h2 class="section__column--title">Interesting Stuff</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="assets/pic04.jpg" alt="main image">
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/pic05.jpg" alt="main image">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="assets/pic06.jpg" alt="main image">
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/pic07.jpg" alt="main image">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#" class="btn btn-small btn-primary"><span class="fas fa-file-alt"></span> More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <h2 class="section__column--title">So what's this all about?</h2>
+                        <p>This is <strong>Verti</strong>, a free and fully responsive HTML5 site template by <a href="#">HTML5 UP</a>. Verti is released under the Creative Commons Attribution license, so feel free to use it for any personal or commercial project you might have going on (just don't forget to credit us for the design!)</p>
+                        <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.</p>
+                        <a href="#" class="btn btn-small btn-primary">Continue Reading <span class="fas fa-circle-arrow-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- e: main -->
+        <!-- footer -->
+        <footer class="footer container">
             <div class="row">
                 <div class="col-3">
                     <h2 class="section__column--title">Random Stuff</h2>
@@ -114,6 +154,5 @@
                 <p class="footer_copyright">© Untitled. All rights reserved | Design: HTML5 UP | Demo Images: Unsplash</p>
             </div>
         </footer>
-    </div> <!-- e: container -->
 </body>
 </html>
