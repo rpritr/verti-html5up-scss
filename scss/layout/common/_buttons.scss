@@ -24,10 +24,15 @@
   font-size: 2.25em;
   @include mixins.tablet() { font-size: 1.75em; }
   @include mixins.tablet-portrait() { font-size: 1.7em; }
+  @include mixins.mobile() { padding: 15px 20px;}
 }
 
 .btn-small {
   width: fit-content;
+  @include mixins.mobile() {
+    width: 100%;
+    font-size: 1.6em;
+  }
   padding: 15px 25px;
 }
 

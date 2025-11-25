@@ -1,4 +1,5 @@
 @use "../../variables/general";
+@use "../../mixins/mixins";
 .footer {
   padding: 60px 0;
   .footer__link { display: block; color: general.$text-color; line-height: 2em;}
@@ -20,4 +21,17 @@
     margin: 15px auto;
     color: general.$copy-color;
   }
+  @include mixins.mobile() {
+    padding: 40px 20px;
+
+    .footer__link {
+      font-size: 1.5em;
+      line-height: 2em;
+    }
+    .col-3 {
+      padding-bottom: 30px;
+      border-bottom: 1px solid general.$copy-color;
+    }
+  }
+
 }

@@ -3,7 +3,10 @@
 main {
   background-color: general.$white-color;
   padding: 80px 20px;
-  margin-bottom: 50px;
+  @include mixins.desktop() {
+    margin-bottom: 50px;
+    .row {     align-items: center;}
+  }
   box-shadow: 0 5px #0000000d;
   .col-4 .container {
     width: 100%;
@@ -12,7 +15,10 @@ main {
   h2 { margin-bottom: 20px; font-size: 2.25em;}
   .col-8 { padding: 0 50px;}
   .col-8 h2 { font-size: 2.25em; }
-  p { line-height: 2.5em; margin-bottom: 20px; color: general.$text-color;}
+  p {  margin-bottom: 20px; color: general.$text-color;}
+  @include mixins.desktop () {
+    p { line-height: 2.5em;}
+  }
   a { color: general.$secondary-color; }
 
 }
@@ -27,4 +33,5 @@ main {
   main .col-8 { padding: 20px;}
   main .container .row { flex-direction: column-reverse;}
   .col-4 .container .row { flex-direction: row;}
+  .col-4 .section__column--title { padding-left: 20px; }
 }

@@ -16,7 +16,9 @@ $base: math.div(100%, $columns);
   .row {
     display: flex;
     flex-wrap: wrap;
-    @include mixins.mobile() { flex-wrap: wrap!important;}
+    @include mixins.mobile() {
+      flex-wrap: wrap!important;
+    }
     @include mixins.tablet() { flex-wrap: wrap!important;}
     @include mixins.tablet-portrait() { flex-wrap: wrap!important;}
   }
